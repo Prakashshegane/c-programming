@@ -1,16 +1,13 @@
 #include<stdio.h>
-int fact(int n)
-{
-    int i,f=1;
-    for(i=1;i<=n;i++)
-    f=f*i;
-    return f;
-}
 int main()
-{
-    int n,res;
-    printf("enter any value :\n");
-    scanf("%d",&n);
-    res=fact(n);
-    printf("factorial result %d :\n",res);
+{   
+    int num,fact=1,i=1;
+    printf("enter anumber:");
+    scanf("%d",&num);
+    while(i<=num)
+    {
+    fact=fact*i;
+    i++;
+    }
+    printf("the factorial of %d is %d",num,fact);
 }
