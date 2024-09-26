@@ -1,14 +1,12 @@
-#include <stdio.h>
-
-int main() {
-    int sum = 0 ,i = 1,n=5;
-     do {
-        sum += i;
-        i++;
-    } while (i <= n);
-
-    printf("Sum of numbers from 1 to %d: %d\n", n, sum);
-
+#include<stdio.h>
+int main()
+{
+    int a=0;
+    do{
+        --a;
+        printf("%d",a);
+        a++;
+    }
+    while(a>=0);
     return 0;
 }
-
