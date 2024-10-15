@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int count=0;
+    int arr[]={1,2,3,4,5,6,7,8};
+    int target=9;
+    for(int i=0;i<8;i++)
+    {
+        for(int j=i+1;j<8;j++)
+        {
+            if(arr[i]+arr[j]==target)
+            {
+            count++;
+            }
+        }
+    }
+    printf("the target is finded:%d\n",count);
+    return 0;
+}
